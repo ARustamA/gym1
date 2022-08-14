@@ -1,47 +1,13 @@
 import style from './App.module.scss';
+import Main from './Main';
 
 function App() {
   return (
     <div className={style.app}>
-      <div className={style.containerMain}>
-      
-        <div className={style.header}>
-          <a href='#' className={style.logo}></a>
-          {/* <img src={logo} width={230} height={106} alt="logo" className={style.logo} /> */}
-          <ul id="menu">
-            <li className={style.active}>
-              <a href="#about">О нас</a>
-            </li>
-            <li>
-              <a href="#gallery">Галерея</a>
-            </li>
-            <li>
-              <a href="#subscription">Абонементы</a>
-            </li>
-            <li>
-              <a href="#instructor">Тренеры</a>
-            </li>
-            <li>
-              <a href="#information">Контакты</a>
-            </li>
-          </ul>
-          <a href="tel:+74964161916" className={style.phone}>+7 (496) 416-19-16 </a>
-          </div>
-          <div className={style.content1}></div>
-          <div className={style.content2}></div>
-        <div className={style.title}>
-          <h1>Фитнес клуб Пантеон</h1>
-          <p>Лучше нас только боги</p>
-          <button className={style.titleButton}>
-          </button>
-          
-        </div>
-      </div>
+      <Main />
 
-        
-          <div className={style.content3}></div>
-          <div className={style.content4}></div>
-          <div className={style.content5}></div>
+
+
 
       <div id='about'>
         <div className={style.container}>
@@ -68,7 +34,7 @@ function App() {
           Контакты
         </div>
       </div>
-      <a href='#' className={style.arroyUp}>
+      <a href='#' id='arrowUp' className={style.arroyUp}>
         <svg
 
           viewBox="0 0 24 24"

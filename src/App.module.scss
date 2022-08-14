@@ -1,7 +1,7 @@
 * {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 ::before,
 ::after {
@@ -44,19 +44,7 @@ body {
   text-align: center;
   position: relative;
 }
-.arroyUp{
-  position: fixed;
-  display: block;
-  bottom: 30px;
-  right: 40px;
-  opacity: 0.4;
-  width:44px;
-  height:54px;
-  &:hover{
-    opacity: 1;
-    transition: all ease-in 0.05s 0.05s;
-  }
-}
+
 .container {
   padding-top: 40px;
   width: 100%;
@@ -67,155 +55,16 @@ body {
     padding: 0;
   }
 }
-.active {
-  
-}
-.header {
-  display: flex;
-  width: 100%;
-  position: relative;
-  z-index: 16;
-  
-  justify-content: space-evenly;
-  ul{
-    margin-top: 65px;
-    display: flex;
-    li{
-      margin-left: 25px;
-    }
-  }
-  .phone{
-    margin-top: 65px;
-  }
-  a{
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 20px;
-    color: #fff;
-  }
-  a:hover{
-    color: #F7931E;
-    transition: all ease-in 0.5s 0.5s;
-
-  }
-
-}
-
-.logo {
-  background-image: url(../public/image/logo.png);
-  width: 230px;
-  height: 106px;
-  
-}
-
-.containerMain{
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-image: url(../public/image/background.png);
-  height: 100vh;
-  position: relative;
-}
-.containerMain::before {
-	position: absolute;
-	content: '';
-	display:inline-block;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-	z-index: 2;
-  box-shadow:inset 0 0 0 1000px rgba(0,0,0,.5);
-	
-}
-.content1{
+.arroyUp {
   position: fixed;
-  width: 220px;
-  height: 130px;
-  background-repeat: no-repeat;
-  z-index: 13;
-  top: 0px;
-  right: 320px;
-  background-image: url(../public/image/rectangleTop1.png);
-}
-.content2{
-  position: fixed;
-  
-  background-repeat: no-repeat;
-  z-index: 13;
-  top: -10px;
-  right: 390px;
-  content: "";
-  border:  1px solid #fff;
-  width: 232.1px;
-  height: 34.46px;
-  transform: rotate(51.99deg)  skewX(-40deg);;
-  
-}
-
-.title{
-  margin: 150px;
-  position: relative;
-  z-index: 5;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  
-  h1{
-    font-weight: 700;
-    font-size: 80px;
-  }
-  p{
-    font-weight: 500;
-    font-size: 40px;
-  }
-  button{
-    position: relative;
-    margin-top: 30px;
-    font-weight: 700;
-    font-size: 16px;
-    color: #fff;
-    width: 280px;
-    height: 60px;
-    background: #F7931E;
-    -webkit-transform: skewX(-20deg);
-    transform: skewX(-20deg);
-    text-decoration: none;
+  display: block;
+  bottom: 30px;
+  right: 40px;
+  opacity: 0.4;
+  width: 44px;
+  height: 54px;
   &:hover {
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-    background-color: #c06804;
-    
-    transition: all ease-in 0.1s 0.1s;
+    opacity: 1;
+    transition: all ease-in 0.05s 0.05s;
   }
-}
-  button::before {
-    content: "Получить консультацию";  
-    position: absolute;
-    z-index: 2;
-    top: 16px;
-    right: 35px;
-    text-align: center;
-    color: #fff;
-    font-size: 16px;
-    -webkit-transform: skewX(20deg);
-    transform: skewX(20deg);
-  
-  }
-  button::after {
-    width: 280px;
-    height: 60px;
-    content: "";  
-    position: absolute;
-    z-index: 1;
-    bottom: 10px;
-    left: 10px;
-    border: 1px solid #FFFFFF;
-  }
-  
-  
-
 }

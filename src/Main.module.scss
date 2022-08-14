@@ -1,0 +1,256 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+html,
+body {
+  height: 100%;
+  line-height: 1;
+  font-size: 16px;
+  color: #fff;
+  scroll-behavior: smooth;
+}
+
+.app {
+  text-align: center;
+  position: relative;
+}
+
+.container {
+  padding-top: 40px;
+  width: 100%;
+  height: 100vh;
+  background: #0c1417;
+  h2 {
+    margin: 0;
+    padding: 0;
+  }
+}
+.active {
+}
+.header {
+  display: flex;
+  width: 100%;
+  position: relative;
+  z-index: 16;
+
+  justify-content: space-evenly;
+  ul {
+    margin-top: 65px;
+    display: flex;
+    li {
+      margin-left: 25px;
+    }
+  }
+  .phone {
+    margin-top: 65px;
+  }
+  a {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+  }
+  a:hover {
+    color: #f7931e;
+    transition: all ease-in 0.5s 0.5s;
+  }
+}
+
+.logo {
+  background-image: url(../public/image/logo.png);
+  width: 230px;
+  height: 106px;
+}
+
+.containerMain {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  background-image: url(../public/image/background.png);
+  
+  position: relative;
+}
+.containerMain::before {
+  position: absolute;
+  content: '';
+  display: inline-block;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+}
+.content1 {
+  position: absolute;
+  width: 220px;
+  height: 130px;
+  background-repeat: no-repeat;
+  z-index: 13;
+  top: 0px;
+  right: 320px;
+  background-image: url(../public/image/rectangleTop1.png);
+}
+.content2 {
+  position: absolute;
+  background-repeat: no-repeat;
+  z-index: 13;
+  top: -10px;
+  right: 390px;
+  content: '';
+  border: 1px solid #fff;
+  width: 232.1px;
+  height: 34.46px;
+  transform: rotate(51.99deg) skewX(-40deg);
+}
+.content3 {
+  position: absolute;
+  background-repeat: no-repeat;
+  z-index: 3;
+  top: 550px;
+  left: -120px;
+  content: '';
+  background-color: #f7931e;
+  width: 400px;
+  height: 52px;
+  transform: rotate(51.99deg) skewX(-40deg);
+}
+
+.content4 {
+  position: absolute;
+  background-repeat: no-repeat;
+  z-index: 3;
+  top: 740px;
+  left: -90px;
+  content: '';
+  border: 1px solid #fff;
+  width: 306.94px;
+  height: 55.58px;
+  transform: rotate(51.99deg) skewX(-40deg);
+}
+.content5 {
+  position: absolute;
+  background-repeat: no-repeat;
+  z-index: 2;
+  content: '';
+  width: 635.08px;
+  height: 115.54px;
+  left: -180px;
+  top: 700.05px;
+  background: rgba(12, 20, 23, 0.8);
+  transform: rotate(51.99deg) skewX(-40deg);
+}
+.title {
+  margin: 150px;
+  position: relative;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    font-weight: 700;
+    font-size: 80px;
+  }
+  p {
+    font-weight: 500;
+    font-size: 40px;
+  }
+  button {
+    position: relative;
+    margin-top: 30px;
+    font-weight: 700;
+    font-size: 16px;
+    color: rgb(185, 172, 172);
+    width: 280px;
+    height: 60px;
+    background: #f7931e;
+    -webkit-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+    text-decoration: none;
+    &:hover {
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+      background-color: #c06804;
+      color: #fff;
+      transition: all ease-in 0.1s 0.1s;
+    }
+  }
+  button::before {
+    content: 'Получить консультацию';
+    position: absolute;
+    z-index: 2;
+    top: 16px;
+    right: 35px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    -webkit-transform: skewX(20deg);
+    transform: skewX(20deg);
+  }
+  button::after {
+    width: 280px;
+    height: 60px;
+    content: '';
+    position: absolute;
+    z-index: 1;
+    bottom: 10px;
+    left: 10px;
+    border: 1px solid #ffffff;
+  }
+}
+.insta{
+  position: absolute;
+  z-index: 3;
+  width: 22px;
+  height: 22px;
+  bottom: 61px;
+  right: 108px;
+}
+
+.vk{
+  z-index: 3;
+  position: absolute;
+  width: 30px;
+  height: 18px;
+  bottom: 61px;
+  right: 61px;
+ &:hover{
+  fill: #F7931E;
+  
+}
+}
