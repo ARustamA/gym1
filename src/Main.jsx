@@ -1,18 +1,27 @@
 import React from 'react'
 import style from './Main.module.scss';
+import Menu from './Menu';
 
 
 
 const Main = () => {
+   const items=[
+      {value:'О нас',href:"#about",id:1},
+      {value:'Галерея',href:"#gallery",id:2},
+      {value:'Абонементы',href:"#subscription",id:3},
+      {value:'Тренеры',href:"#instructor",id:4},
+      {value:'Контакты',href:"#information",id:5},
+
+]
    return (
       <div className={style.containerMain}>
 
          <div className={style.header}>
 
             <a href='#' className={style.logo}></a>
-
-            <ul id="nav" className={style.menu}>
-               <li className={style.active}>
+            
+            <nav id="nav" >
+               {/* <li className={style.active}>
                   <a href="#about">О нас</a>
                </li>
                <li>
@@ -26,16 +35,16 @@ const Main = () => {
                </li>
                <li>
                   <a href="#information">Контакты</a>
-               </li>
-
-            </ul>
+               </li> */}
+            <div className={style.burgerBtn}>
+               <span />
+            </div>
+            </nav>
+            <Menu items={items} />
+            
             <a href="tel:+74964161916" className={style.phone}>+7 (496) 416-19-16 </a>
          </div>
-         <div id="contain">
-            <div className={style.bar1}></div>
-            <div className={style.bar2}></div>
-            <div className={style.bar3}></div>
-         </div>
+      
          <div className={style.content0}></div>
          <div className={style.content1}></div>
          <div className={style.content2}></div>
