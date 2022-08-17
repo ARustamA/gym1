@@ -24,6 +24,20 @@
       font-size: 28px;
     }
     
+    a {
+      text-decoration: none;
+      background-image: linear-gradient(currentColor, currentColor);
+      background-position: 0% 100%;
+      background-repeat: no-repeat;
+      background-size: 0% 2px;
+      transition: background-size .1s;
+      &:hover {
+      background-size: 100% 2px;
+  }
+  }
+  
+  
+    
   }
   .phone {
     margin-top: 60px;
@@ -226,6 +240,13 @@
   }
 }
 @media screen and(max-width: 1024px) {
+  
+  .header{
+   .phone{
+    margin-top: 50px;
+    margin-right: 20px;
+  } 
+  }
   .title {
     margin: 70px;
     h1 {
@@ -240,17 +261,25 @@
 }
 @media screen and(max-width: 768px) {
   .header {
+    .menu{
+      margin-left: 5px;
+      ul{
+        gap: 15px;
+      }
+      
+    }
     nav {
       margin-top: 30px;
       flex-wrap: wrap;
+      
       li {
-        margin-left: 10px;
+        margin-left: 5px;
       }
     }
     .logo {
       margin-top: 0px;
-      margin-left: 5px;
-      width: 130px;
+      margin-left: 15px;
+      width: 300px;
       height: 66px;
     }
     .phone {
