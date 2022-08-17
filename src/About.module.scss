@@ -12,7 +12,6 @@
 .content {
   display: flex;
   position: relative;
-  
 }
 .content1 {
   position: absolute;
@@ -21,8 +20,8 @@
   background-repeat: no-repeat;
   background-position: center center;
   z-index: 2;
-  left: 130px;
-  top: 100px;
+  left: 10%;
+  top: 70px;
   background-image: url(../public/image/jump.jpg);
 }
 .content2 {
@@ -32,14 +31,14 @@
   background-repeat: no-repeat;
   background-position: center center;
   z-index: 2;
-  top: 140px;
-  left: 468px;
+  top: 100px;
+  left: 31%;
   background-image: url(../public/image/weights.jpg);
 }
 .content3 {
   position: absolute;
   top: 150px;
-  right: 170px;
+  right: 15%;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -98,4 +97,50 @@ button::before {
   font-size: 16px;
   -webkit-transform: skewX(20deg);
   transform: skewX(20deg);
+}
+@media screen and(max-width: 1440px) {
+  .content1 {
+    width: 308px;
+      height: 432px;
+    left: 10%;
+    top: 50px;
+    }
+    .content2 {
+    width: 307px;
+      height: 432px;
+      top: 80px;
+    left: 31%;
+    }
+        
+  .content3 {
+    top: 100px;
+    right: 7%;
+    width: 400px;
+    h3 {
+      font-size: 26px;
+    }
+  }
+}
+@media screen and(max-width: 1024px) {
+  .content1 {
+    width: 308px;
+      height: 432px;
+    left: 10%;
+    top: 50px;
+    }
+    .content2 {
+    width: 307px;
+      height: 432px;
+      top: 80px;
+    left: 31%;
+    }
+        
+  .content3 {
+    top: 100px;
+    right: 7%;
+    width: 300px;
+    h3 {
+      font-size: 26px;
+    }
+  }
 }
