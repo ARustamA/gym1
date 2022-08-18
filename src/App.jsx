@@ -1,5 +1,6 @@
 import About from './About';
 import style from './App.module.scss';
+import Gallery from './Gallery';
 import Main from './Main';
 
 function App() {
@@ -8,11 +9,8 @@ function App() {
       <Main />
 
       <About /> 
-      <div id='gallery'>
-        <div className={style.container}>
-          <h2>Галерея</h2>
-        </div>
-      </div>
+      
+      <Gallery />
       <div id='subscription'>
         <div className={style.container}>
           Абонементы
