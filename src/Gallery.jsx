@@ -7,9 +7,12 @@ const Gallery = () => {
       <div id='gallery'>
          <div className={style.container}>
             <h2>Галерея</h2>
-         <div>
-            <Slider />
-         </div>
+            <div className={style.slider}>
+               <Slider />
+               <Slider />
+            </div>
+
+
 
 
             <a href='#subscription' className={style.arrowDawn}>
