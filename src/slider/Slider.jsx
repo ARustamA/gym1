@@ -7,12 +7,12 @@ import a from "./assets/1.webp";
 import b from "./assets/2.webp";
 import c from "./assets/3.webp";
 import d from "./assets/4.webp";
-import f from "./assets/5.jpg";
+// import f from "./assets/5.jpg";
 import g from "./assets/6.jpg";
 import e from "./assets/7.jpg";
 
 
-const imageArr = [a, b, c, d, f, g, e];
+const imageArr = [a, b, c, d, g, e];
 const len = imageArr.length - 1;
 
 

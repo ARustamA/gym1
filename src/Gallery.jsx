@@ -7,10 +7,10 @@ const Gallery = () => {
       <div id='gallery'>
          <div className={style.container}>
             <h2>Галерея</h2>
-            <div className={style.slider}>
+            <>
                <Slider />
-               <Slider />
-            </div>
+               {/* <Slider /> */}
+            </>
 
 
 
