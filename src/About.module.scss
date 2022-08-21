@@ -152,11 +152,14 @@ button::before {
 
   .content3 {
     top: 100px;
-    right: 10%;
+    left: 60%;
     width: 400px;
     h3 {
       font-size: 30px;
     }
+  }
+  .icons{
+    top: 550px;
   }
 }
 @media screen and(max-width: 1024px) {
@@ -175,11 +178,14 @@ button::before {
 
   .content3 {
     top: 90px;
-    right: 3%;
+    right: 1%;
     width: 300px;
     h3 {
       font-size: 26px;
     }
+  }
+  .icons{
+    top: 500px;
   }
 }
 @media screen and(max-width: 768px) {

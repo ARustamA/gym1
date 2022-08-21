@@ -13,7 +13,8 @@ const Gallery = () => {
             </>
 
 
-
+            <div className={style.content1}></div>
+            <div className={style.content2}></div>
 
             <a href='#subscription' className={style.arrowDawn}>
                <svg width="19" height="10" viewBox="0 0 19 10" fill="none" xmlns="http://www.w3.org/2000/svg">

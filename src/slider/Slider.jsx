@@ -28,7 +28,8 @@ const Slider = () => {
 
    return (
       <div className="slider-container">
-         <SliderContent activeIndex={activeIndex} sliderImage={imageArr} />
+         <SliderContent activeIndex={activeIndex} sliderImage={imageArr} length={len}/>
+         
          <Arrows
             prevSlide={() => setActiveIndex(activeIndex < 1 ? len : activeIndex - 1)    }
             nextSlide={() => setActiveIndex(activeIndex === len ? 0 : activeIndex + 1)  }
