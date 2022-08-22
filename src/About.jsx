@@ -1,7 +1,7 @@
 import React from 'react'
 import style from './About.module.scss';
 
-const About = () => {
+export const About = () => {
    return (
       <div id='about'>
          <div className={style.container}>
@@ -55,5 +55,3 @@ const About = () => {
       </div>
    )
 }
-
-export default About

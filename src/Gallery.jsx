@@ -1,6 +1,6 @@
 import React from 'react'
 import style from './Gallery.module.scss';
-import Slider from './slider/Slider';
+import {Slider} from './slider/Slider';
 import a from "./slider/assets/1.webp";
 import b from "./slider/assets/2.webp";
 import c from "./slider/assets/3.webp";
@@ -21,7 +21,7 @@ const imageAr=[i1,i2,i3,i4,i5,i6,i7,i8]
 const length =imageAr.length-1;
 const imageArr = [a, b, c, d, g, e];
 const len = imageArr.length - 1;
-const Gallery = () => {
+export const Gallery = () => {
    return (
       <div id='gallery'>
          <div className={style.container}>
@@ -44,5 +44,3 @@ const Gallery = () => {
       </div>
    )
 }
-
-export default Gallery

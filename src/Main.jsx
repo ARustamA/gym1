@@ -1,10 +1,10 @@
 import React from 'react'
 import style from './Main.module.scss';
-import Menu from './Menu';
+import {Menu} from './Menu';
 
 
 
-const Main = () => {
+export const Main = () => {
    const items=[
       {value:'О нас',href:"#about",id:1},
       {value:'Галерея',href:"#gallery",id:2},
@@ -78,4 +78,3 @@ const Main = () => {
    )
 }
 
-export default Main

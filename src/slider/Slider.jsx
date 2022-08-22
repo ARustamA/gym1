@@ -6,7 +6,8 @@ import "./slider.css";
 
 
 
-const Slider = ({imageArr, len}) => {
+
+export const Slider = ({imageArr, len}) => {
    const [activeIndex, setActiveIndex] = useState(0);
 
    return (
@@ -25,5 +26,3 @@ const Slider = ({imageArr, len}) => {
       </div>
    );
 }
-
-export default Slider

@@ -1,8 +1,9 @@
-import About from './About';
-import style from './App.module.scss';
-import Gallery from './Gallery';
-import Main from './Main';
+import {About} from './About';
+import {Gallery} from './Gallery';
+import {Main} from './Main';
+import { Subscription } from './Subscription';
 
+import style from './App.module.scss';
 function App() {
   return (
     <div className={style.app}>
@@ -11,11 +12,8 @@ function App() {
       <About /> 
       
       <Gallery />
-      <div id='subscription'>
-        <div className={style.container}>
-          Абонементы
-        </div>
-      </div>
+
+      <Subscription /> 
       <div id='instructor'>
         <div className={style.container}>
           Тренеры

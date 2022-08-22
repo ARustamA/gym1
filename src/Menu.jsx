@@ -1,6 +1,6 @@
 import React from 'react'
 import style from './Main.module.scss';
-const Menu = ({ items }) => {
+export const Menu = ({ items }) => {
    return (
       <div className={style.menu}>
          <div className={style.blur}></div>
@@ -16,5 +16,3 @@ const Menu = ({ items }) => {
       </div>
    )
 }
-
-export default Menu

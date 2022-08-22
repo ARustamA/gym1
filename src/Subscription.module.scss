@@ -1,0 +1,187 @@
+.container {
+  position: relative;
+  padding-top: 5px;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  color: #0c1417;
+  h2 {
+    margin-bottom: 20px;
+    padding: 0;
+    font-size: 1em;
+    font-weight: 700;
+    font-size: 30px;
+    font-weight: 700;
+    font-size: 30px;
+    margin: 20px;
+  }
+  h3 {
+   
+      text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    margin: 30px 15%;
+  }
+}
+.arrowDawn {
+   cursor: pointer;
+  z-index: 3;
+  position: absolute;
+  bottom: 61px;
+  margin: 0 auto;
+  &:hover {
+    stroke: #f7931e;
+  }
+}
+.tableFirst {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+.tableFirst::after {
+  margin-top: 10px;
+  position: absolute;
+
+  display: flex;
+  content: '';
+  height: 0;
+  width: 1095px;
+  border: 1px solid rgba(12, 20, 23, 0.5);
+}
+
+.table {
+  table-layout: fixed;
+  display: flex;
+  flex-direction: column;
+  width: 1095px;
+  margin: 0 15%;
+
+  text-align: center;
+  td {
+    
+    width: 120px;
+    text-align: center;
+    padding: 5px;
+  }
+  th {
+   
+    padding: 20px;
+    height: 30px;
+  }
+  .firstTd {
+    font-weight: 700;
+    font-size: 16px;
+    text-align: left;
+    width: 200px;
+    span{
+      font-weight: 400;
+    }
+  }
+  .h3Margin{
+   margin: 3% 15%; 
+
+  }
+}
+.colorR{
+   color: #f7931e;
+}
+.tdColor {
+  font-weight: 700;
+  font-size: 16px;
+  color: #f7931e;
+}
+.content {
+   height: 100%;
+  display: flex;
+  margin: 0 15%;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.08);
+  width: 308px;
+  height: 372px;
+  margin: 30px;
+  .title {
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .titleColor {
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #f7931e;
+  }
+  .text {
+    font-weight: 400;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  p {
+    font-weight: 700;
+    font-size: 24px;
+  }
+
+  button {
+    position: relative;
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    color: rgb(185, 172, 172);
+    width: 280px;
+    height: 60px;
+    background-color: #fff;
+    border: 1px solid #f7931e;
+    color: #000;
+    -webkit-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+    text-decoration: none;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  }
+  button::before {
+    content: 'Узнать';
+    position: absolute;
+    z-index: 2;
+    top: 16px;
+    right: 110px;
+    text-align: center;
+    color: #f7931e;
+    font-weight: 700;
+    font-size: 16px;
+    -webkit-transform: skewX(20deg);
+    transform: skewX(20deg);
+  }
+  button:hover {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    background-color: #0c1417;
+    border: 1px solid #0c1417;
+    transition: all ease-in 0.1s 0.1s;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  }
+}
+.content1 {
+   position: absolute;
+   background-repeat: no-repeat;
+   z-index: 2;
+   content: '';
+   width: 15%;
+   height: 66px;
+   left: -100px;
+   bottom: 35%;
+   background: rgba(12, 20, 23, 0.9);
+   transform: rotate(51.99deg) skewX(-40deg);
+ }
+ .content2 {
+   position: absolute;
+   background-repeat: no-repeat;
+   z-index: 3;
+   bottom: 35%;
+   left: -120px;
+   content: '';
+   border: 1px solid #f7931e;
+   width: 23%;
+   height: 54px;
+   transform: rotate(51.99deg) skewX(-40deg);
+ }
