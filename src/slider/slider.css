@@ -1,10 +1,8 @@
 .slider-container {
-  height: 45vh;
+  height: 40vh;
   width: 100%;
   position: relative;
-
-  margin-top: 10px;
-
+  margin-bottom: 20px;
 }
 
 .active {
@@ -18,43 +16,47 @@
 .slides {
   display: flex;
   justify-content: center;
-  height: 50vh;
+  
   width: 100%;
   position: relative;
+
+
 }
 
 .slide-image {
   width: 270px;
-  height: 370px;
+  height: 350px;
+
   position: absolute;
   object-fit: cover;
   border-radius: 10px;
-  margin-top: 5px;
+  margin-top: 10px;
   z-index:6;
-  
+
 }
+
 .slide-image-1{
   width: 200px;
   height: 300px;
   position: absolute;
-  top: 5%;
+  top: 10%;
   left: 30%;
   object-fit: cover;
   border-radius: 10px;
-  margin-top: 5px;
+  margin-top: 25px;
   filter: blur(2px);
-  
+
   
 }
 .slide-image--1{
   width: 200px;
   height: 300px;
   position: absolute;
-  top: 5%;
+  top: 10%;
   right: 30%;
   object-fit: cover;
   border-radius: 10px;
-  margin-top: 5px;
+  margin-top: 25px;
   filter: blur(2px);
   
 }
@@ -64,7 +66,7 @@
   cursor: pointer;
   z-index: 5;
   position: absolute;
-  top: 40%;
+  top: 30%;
   left: 20%;
   width: 7%;
   padding: 1rem;
@@ -78,7 +80,7 @@
   cursor: pointer;
   z-index: 5;
   position: absolute;
-  top: 40%;
+  top: 30%;
   right: 20%;
   width: 7%;
   padding: 1rem;
@@ -106,12 +108,12 @@
 
 .all-dots {
   
-  width: 200px;
+  width: 250px;
   height: 40px;
   position: absolute;
   display: flex;
-  bottom: 0;
-  left: 45%;
+  bottom: -30px;
+  left: 43%;
   justify-content: center;
   z-index: 10;
 }
@@ -125,7 +127,8 @@
   background-color: transparent;
   /* background-color: rgba(0, 0, 0, 0.3); */
   border-radius: 50%;
-  display: inline-block;
+
+  
 }
 
 .slider-container:hover .dot:hover {

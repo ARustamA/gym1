@@ -1,15 +1,34 @@
 import React from 'react'
 import style from './Gallery.module.scss';
 import Slider from './slider/Slider';
+import a from "./slider/assets/1.webp";
+import b from "./slider/assets/2.webp";
+import c from "./slider/assets/3.webp";
+import d from "./slider/assets/4.webp";
+import g from "./slider/assets/6.jpg";
+import e from "./slider/assets/7.jpg";
+import i1 from "./slider/assets/01.jpg";
+import i2 from "./slider/assets/02.jfif";
+import i3 from "./slider/assets/03.jfif";
+import i4 from "./slider/assets/04.jfif";
+import i5 from "./slider/assets/05.jfif";
+import i6 from "./slider/assets/06.jfif";
+import i7 from "./slider/assets/07.jfif";
+import i8 from "./slider/assets/08.jfif";
 
+
+const imageAr=[i1,i2,i3,i4,i5,i6,i7,i8]
+const length =imageAr.length-1;
+const imageArr = [a, b, c, d, g, e];
+const len = imageArr.length - 1;
 const Gallery = () => {
    return (
       <div id='gallery'>
          <div className={style.container}>
             <h2>Галерея</h2>
             <>
-               <Slider />
-               {/* <Slider /> */}
+               <Slider imageArr={imageArr} len={len}/>
+               <Slider imageArr={imageAr} len={length}/>
             </>
 
 
