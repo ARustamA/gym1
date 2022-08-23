@@ -4,6 +4,7 @@ import {Main} from './Main';
 import { Subscription } from './Subscription';
 
 import style from './App.module.scss';
+import { Instructor } from './Instructor';
 function App() {
   return (
     <div className={style.app}>
@@ -14,11 +15,8 @@ function App() {
       <Gallery />
 
       <Subscription /> 
-      <div id='instructor'>
-        <div className={style.container}>
-          Тренеры
-        </div>
-      </div>
+      
+      <Instructor />
       <div id='information'>
         <div className={style.container}>
           Контакты

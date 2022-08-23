@@ -1,8 +1,8 @@
 .slider-container {
-  height: 40vh;
+  height: 55vh;
   width: 100%;
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 .active {
@@ -24,8 +24,8 @@
 }
 
 .slide-image {
-  width: 270px;
-  height: 350px;
+  width: 275px;
+  height: 380px;
 
   position: absolute;
   object-fit: cover;
@@ -36,8 +36,8 @@
 }
 
 .slide-image-1{
-  width: 200px;
-  height: 300px;
+  width: 230px;
+  height: 350px;
   position: absolute;
   top: 10%;
   left: 30%;
@@ -49,8 +49,8 @@
   
 }
 .slide-image--1{
-  width: 200px;
-  height: 300px;
+  width: 230px;
+  height: 350px;
   position: absolute;
   top: 10%;
   right: 30%;
