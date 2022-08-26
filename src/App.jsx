@@ -1,3 +1,4 @@
+import React, { useState } from 'react'
 import {About} from './About';
 import {Gallery} from './Gallery';
 import {Main} from './Main';
@@ -5,9 +6,12 @@ import { Subscription } from './Subscription';
 
 import style from './App.module.scss';
 import { Instructor } from './Instructor';
+import { PopUp } from './PopUp';
 function App() {
+  const[popupActive, setPopupActive] = useState(true)
   return (
     <div className={style.app}>
+      
       <Main />
 
       <About /> 
@@ -17,7 +21,8 @@ function App() {
       <Subscription /> 
       
       <Instructor />
-      <div id='information'>
+      <PopUp active={popupActive} setActive={setPopupActive}/>
+      <div id='information'>set
         <div className={style.container}>
           Контакты
         </div>

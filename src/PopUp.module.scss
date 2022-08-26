@@ -1,0 +1,74 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 20;
+  pointer-events: none;
+  transition: 0.5s all;
+}
+.modal.active {
+  pointer-events: all;
+  transition: 0.5s all;
+}
+.popup {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background: #fff;
+  width: 400px;
+  height: 300px;
+  padding: 25px;
+  transition: 0.5s all;
+}
+.popup.active {
+  transform: translate(-50%, -50%) scale(1);
+  transition: 0.5s all;
+}
+
+.top {
+  display: flex;
+  justify-content: flex-end;
+}
+.content1 {
+  position: absolute;
+  background-repeat: no-repeat;
+  z-index: 2;
+  content: '';
+  width: 25%;
+  height: 66px;
+  left: -180px;
+  bottom: 25%;
+  background: #f7931e;
+  transform: rotate(51.99deg) skewX(-40deg);
+}
+.content2 {
+  position: absolute;
+  background-repeat: no-repeat;
+  z-index: 3;
+  bottom: 25%;
+  left: -120px;
+  content: '';
+  border: 1px solid #fff;
+  width: 15%;
+  height: 54px;
+  transform: rotate(51.99deg) skewX(-40deg);
+}
+.logo {
+  background-image: url(../public/image/logo.png);
+  width: 230px;
+  height: 106px;
+  margin-top: 5px;
+  margin-left: 40px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}

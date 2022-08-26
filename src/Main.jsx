@@ -11,8 +11,9 @@ export const Main = () => {
       {value:'Абонементы',href:"#subscription",id:3},
       {value:'Тренеры',href:"#instructor",id:4},
       {value:'Контакты',href:"#information",id:5},
-
-]
+      ]  
+      
+   
    return (
       <div className={style.containerMain}>
 
@@ -21,21 +22,6 @@ export const Main = () => {
             <a href='#' className={style.logo}></a>
             
             <nav id="nav" >
-               {/* <li className={style.active}>
-                  <a href="#about">О нас</a>
-               </li>
-               <li>
-                  <a href="#gallery">Галерея</a>
-               </li>
-               <li>
-                  <a href="#subscription">Абонементы</a>
-               </li>
-               <li>
-                  <a href="#instructor">Тренеры</a>
-               </li>
-               <li>
-                  <a href="#information">Контакты</a>
-               </li> */}
             <div className={style.burgerBtn}>
                <span />
             </div>
@@ -54,7 +40,7 @@ export const Main = () => {
          <div className={style.title}>
             <h1>Фитнес клуб Пантеон</h1>
             <p>Лучше нас только боги</p>
-            <button className={style.titleButton}>
+            <button  className={style.titleButton}>
             </button>
          </div>
          <a href="https://www.instagram.com/panteon_oz_official/" className={style.insta}>
