@@ -4,7 +4,7 @@ import {Menu} from './Menu';
 
 
 
-export const Main = () => {
+export const Main = ({active, setActive}) => {
    const items=[
       {value:'О нас',href:"#about",id:1},
       {value:'Галерея',href:"#gallery",id:2},
@@ -40,7 +40,7 @@ export const Main = () => {
          <div className={style.title}>
             <h1>Фитнес клуб Пантеон</h1>
             <p>Лучше нас только боги</p>
-            <button  className={style.titleButton}>
+            <button  className={style.titleButton} onClick={()=>setActive(true)}>
             </button>
          </div>
          <a href="https://www.instagram.com/panteon_oz_official/" className={style.insta}>

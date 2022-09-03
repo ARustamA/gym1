@@ -8,11 +8,11 @@ import style from './App.module.scss';
 import { Instructor } from './Instructor';
 import { PopUp } from './PopUp';
 function App() {
-  const[popupActive, setPopupActive] = useState(true)
+  const[popupActive, setPopupActive] = useState(false);
   return (
     <div className={style.app}>
       
-      <Main />
+      <Main active={popupActive} setActive={setPopupActive}/>
 
       <About /> 
       

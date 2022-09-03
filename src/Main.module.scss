@@ -177,6 +177,7 @@
     -webkit-transform: skewX(-20deg);
     transform: skewX(-20deg);
     text-decoration: none;
+    cursor: pointer;
     &:hover {
       box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
       background-color: #c06804;
