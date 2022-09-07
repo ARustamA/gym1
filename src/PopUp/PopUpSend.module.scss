@@ -1,0 +1,54 @@
+.send {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  .content {
+    span {
+      
+      .colorSpan {
+        color: #f7931e;
+      }
+    }
+  }
+  .inputContent{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    input {
+      margin: 20px;
+      padding: 12px 20px;
+      box-sizing: border-box;
+      border: none;
+      color: #fff;
+
+      background-color: inherit;
+      border-radius: 4px;
+      width: 350px;
+    }
+    
+    .content1{
+      position: absolute;
+      content: '';
+      width: 340px;
+      height: 1px;
+      background-color: #fff;
+      top: 60px;
+    }
+    .content2{
+      position: absolute;
+      content: '';
+      width: 340px;
+      height: 1px;
+      background-color: #fff;
+      top: 139px;
+    }
+    p{
+      font-weight: 400;
+      font-size: 12px;
+      
+    }
+  }
+}

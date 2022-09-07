@@ -6,12 +6,12 @@
   height: 100vh;
   background: rgba(0, 0, 0, 0.5);
   z-index: 10;
-  pointer-events: none;
   transition: 0.5s all;
   display: flex;
   align-items: center;
   justify-content: center;
   transform: scale(0);
+  pointer-events: all;
 }
 .activeModal {
   pointer-events: all;
@@ -22,7 +22,7 @@
   height: 100vh;
   background: rgba(121, 113, 113, 0.5);
   z-index: 10;
-  pointer-events: none;
+
   transition: 0.5s all;
   display: flex;
   align-items: center;
@@ -35,24 +35,28 @@
   top: 0;
   width: 600px;
   height: 500px;
-  
+
   background-color: #0c1417;
   color: rgb(247, 231, 231);
   font-weight: 500;
   padding: 25px;
   border-radius: 15px;
-
-
+  box-shadow: 1px 1px 6px 0px #f7931e;
   .top {
     display: flex;
     justify-content: flex-end;
     .close {
       svg {
         cursor: pointer;
+        
+      }
+      &:hover{
+        transition:all 0.3s ease-in-out;
+        transform: rotate(45deg);
       }
     }
     .logo {
-      background-image: url(../public/image/logo.png);
+      background-image: url(../../public/image/logo.png);
       width: 230px;
       height: 106px;
       position: absolute;
@@ -66,10 +70,10 @@
   .content {
     display: flex;
     flex-direction: column;
-    p{
+    p {
       margin-left: 20px;
-        font-weight: 600;
-        font-size: 20px;
+      font-weight: 600;
+      font-size: 20px;
     }
     .contentTop {
       margin-top: 40px;
@@ -82,49 +86,27 @@
         font-size: 30px;
       }
     }
-    .contentCenter{
+    .contentCenter {
       margin-top: 20px;
       display: flex;
       align-items: center;
       justify-content: center;
-        font-weight: 500;
-        font-size: 16px;
-        span{
-          margin: 10px 15px;
-        }
+      font-weight: 500;
+      font-size: 16px;
+      span {
+        margin: 10px 15px;
+      }
     }
   }
-  .contentBottom{
+  .contentBottom {
     display: flex;
     align-items: center;
     justify-content: center;
-    svg{
+    svg {
       margin: 20px;
+      cursor: pointer;
     }
   }
 }
 
-// .content1 {
-//   position: absolute;
-//   background-repeat: no-repeat;
 
-//   content: '';
-//   width: 25%;
-//   height: 66px;
-//   left: 0px;
-//   bottom: 25%;
-//   background: #f7931e;
-//   transform: rotate(51.99deg) skewX(-40deg);
-// }
-// .content2 {
-//   position: absolute;
-//   background-repeat: no-repeat;
-
-//   bottom: 25%;
-//   left: 0px;
-//   content: '';
-//   border: 1px solid #fff;
-//   width: 15%;
-//   height: 54px;
-//   transform: rotate(51.99deg) skewX(-40deg);
-// }

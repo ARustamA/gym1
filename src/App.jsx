@@ -6,7 +6,7 @@ import { Subscription } from './Subscription';
 
 import style from './App.module.scss';
 import { Instructor } from './Instructor';
-import { PopUp } from './PopUp';
+import { PopUp } from './PopUp/PopUp';
 function App() {
   const[popupActive, setPopupActive] = useState(false);
   return (
@@ -22,7 +22,7 @@ function App() {
       
       <Instructor />
       <PopUp active={popupActive} setActive={setPopupActive}/>
-      <div id='information'>set
+      <div id='information'>
         <div className={style.container}>
           Контакты
         </div>
