@@ -2,23 +2,26 @@ import React from 'react';
 import style from './PopUpSend.module.scss';
 
 
-export const PopUpSend = () => {
-   const [value, setValue] = React.useState('');
-
+export const PopUpSend = ({value, setValue, isValid, setIsValid}) => {
+   
+   
    const onChangeInput = (event => setValue(event.target.value))
-   let isValid
+   const phone = document.getElementById("phone");
    function validNumber() {
       const regular = /^(\+7|7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$/;
-      const number = value;
       
-      isValid = regular.test(number);
-      console.log(isValid)
+      
+      let isValidNumb = regular.test(value);
+      setIsValid(isValidNumb);
+   
       return isValid
    }
    
 
    function sendData () {
-      (validNumber()===false) ? d :d
+      validNumber() 
+      
+      
    }
    return (
       
@@ -30,10 +33,14 @@ export const PopUpSend = () => {
                и мы <span className={style.colorSpan}>обязательно с Вами свяжемся</span>
             </span>
             <div className={style.inputContent}>
-               <input type="text" placeholder="Введите имя" />
+               <input 
+               type="text" 
+               placeholder="Введите имя" 
+               className={style.input}
+               />
                <div className={style.content1}></div>
                <input 
-               
+                  className={style.input}
                   id='phone'
                   type="tel"
                   name="phone"
@@ -43,8 +50,9 @@ export const PopUpSend = () => {
                   onChange={onChangeInput}
                />
                <div className={style.content2}></div>
+               
             </div>
-            <button onClick={sendData()}></button>
+            <button onClick={()=>sendData()}></button>
             <p>Нажимая на кнопку вы соглашаетесь с политикой конфиденциальности</p>
 
          </div>
