@@ -28,6 +28,14 @@
       width: 350px;
     
     }
+    .inputError{ box-sizing: border-box;
+      margin: 20px;
+      padding: 12px 20px;
+      border: none;
+      color: #f7931e;
+      background-color: inherit;
+      border-radius: 4px;
+      width: 350px;}
     
     .content1{
       position: absolute;
@@ -52,4 +60,39 @@
       
     }
   }
+}
+
+.but{
+  cursor:pointer;
+  position: relative;
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  color: rgb(185, 172, 172);
+  width: 280px;
+  height: 60px;
+  background-color: #0c1417;
+  border: 1px solid #fff;
+  -webkit-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+  text-decoration: none;
+  &:hover {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    background-color: #f7931e;
+    color: #fff;
+    transition: all ease-in 0.1s 0.1s;
+    box-shadow: 0px 5px 5px 0px #F7931E;
+  }
+}
+.but::before {
+  content: 'Получить консультацию';
+  position: absolute;
+  z-index: 2;
+  top: 16px;
+  right: 35px;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  -webkit-transform: skewX(20deg);
+  transform: skewX(20deg);
 }

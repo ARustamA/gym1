@@ -1,7 +1,9 @@
 import React from 'react'
+
 import style from './PopUp.module.scss';
 import { PopUpEnd } from './PopUpEnd';
 import { PopUpSend } from './PopUpSend';
+import { PopUpSend2 } from './PopUpSend2';
 
 export const PopUp = ({ active, setActive }) => {
 
@@ -19,11 +21,11 @@ export const PopUp = ({ active, setActive }) => {
                </a>
 
             </div>
-
-            <PopUpSend value={value} setValue={setValue}
-               setIsValid={setIsValid} isValid={isValid} />
-            {/* <PopUpEnd value={value} setValue={setValue} />  */}
-
+            {isValid ? <PopUpEnd value={value} setValue={setValue} />
+                     :  <PopUpSend2 value={value} setValue={setValue}
+               setIsValid={setIsValid} isValid={isValid} />   }
+            
+            
          </div>
 
 

@@ -2,6 +2,9 @@ import React from 'react';
 import style from './PopUpSend.module.scss';
 
 
+
+
+
 export const PopUpSend = ({value, setValue, isValid, setIsValid}) => {
    
    
