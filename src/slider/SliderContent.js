@@ -13,7 +13,7 @@ export function SliderContent({ activeIndex, sliderImage, length }) {
           {
             (index - 1 < 0) ? (index = length-1) 
           : (index + 1 > length) ? index = 1 
-          : (index)}
+          : (console.log(index))}
             <>
             <img className="slide-image-1" src={sliderImage[index - 1]} alt="foto" />
             <img className="slide-image" src={sliderImage[index]} alt="foto" />

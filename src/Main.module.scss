@@ -425,3 +425,13 @@
     margin-top: 150px;
 }
 }
+.arrowDawn {
+  z-index: 3;
+  cursor: pointer;
+  position: absolute;
+  bottom: 1%;
+  margin: 0 auto;
+  &:hover {
+    stroke: #f7931e;
+  }
+}

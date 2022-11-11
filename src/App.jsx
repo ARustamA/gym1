@@ -1,27 +1,27 @@
 import React, { useState } from 'react'
-import {About} from './About';
-import {Gallery} from './Gallery';
-import {Main} from './Main';
+import { About } from './About';
+import { Gallery } from './Gallery';
+import { Main } from './Main';
 import { Subscription } from './Subscription';
 
 import style from './App.module.scss';
 import { Instructor } from './Instructor';
 import { PopUp } from './PopUp/PopUp';
 function App() {
-  const[popupActive, setPopupActive] = useState(false);
+  const [popupActive, setPopupActive] = useState(false);
   return (
     <div className={style.app}>
-      
-      <Main active={popupActive} setActive={setPopupActive}/>
 
-      <About /> 
-      
+      <Main active={popupActive} setActive={setPopupActive} />
+
+      <About />
+
       <Gallery />
 
-      <Subscription /> 
-      
+      <Subscription />
+
       <Instructor />
-      <PopUp active={popupActive} setActive={setPopupActive}/>
+      <PopUp active={popupActive} setActive={setPopupActive} />
       <div id='information'>
         <div className={style.container}>
           Контакты
@@ -46,7 +46,7 @@ function App() {
           />
         </svg>
       </a>
-      
+
     </div>
   );
 }
