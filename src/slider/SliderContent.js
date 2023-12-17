@@ -1,30 +1,27 @@
 import React from "react";
-
-
+import { useId } from "react";
 
 export function SliderContent({ activeIndex, sliderImage, length }) {
+  const id = useId()
   return (
     <section>
-      {sliderImage.map((slide, index) => (
+      {sliderImage.map((slide, index) => {
+        const prevIndex = (index - 1 + length) % length;
+        const nextIndex = (index + 1) % length;
 
-        <div
-          key={index}
-          className={index === activeIndex ? "slides active" : "inactive"}>
-          {
-            (index - 1 < 0) ? (index = length-1) 
-          : (index + 1 > length) ? index = 1 
-          : (console.log(index))}
+        return (
+          <div
+            key={index + id}
+            className={index === activeIndex ? "slides active" : "inactive"}
+          >
             <>
-            <img className="slide-image-1" src={sliderImage[index - 1]} alt="foto" />
-            <img className="slide-image" src={sliderImage[index]} alt="foto" />
-            <img className="slide-image--1" src={sliderImage[index + 1]} alt="foto" />
+              <img className="slide-image-1" src={sliderImage[prevIndex]} alt="foto" />
+              <img className="slide-image" src={sliderImage[index]} alt="foto" />
+              <img className="slide-image--1" src={sliderImage[nextIndex]} alt="foto" />
             </>
-          
-          
-          
-          
-        </div>
-      ))}
+          </div>
+        );
+      })}
     </section>
   );
 }
